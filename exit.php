@@ -1,0 +1,9 @@
+<?php
+//session_unregistered("login");
+//session_unregistered("password");
+session_unset();
+session_destroy();
+$id_bask=$_COOKIE["id_bask"];
+setcookie("id_bask",$id_bask);
+include("index00.php");
+?>
